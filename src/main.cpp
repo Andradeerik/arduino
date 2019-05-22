@@ -1,5 +1,4 @@
 #include <Arduino.h>
-
 #include <Ultrasonic.h>
 
 Ultrasonic ultraleft(12, 11);
@@ -26,35 +25,35 @@ void setup()
 void loop()
 {
 
-  val = ultraright.Ranging(CM); // lee el estado del Boton
+  val = ultraright.Ranging(CM); 
   if ((val <= 15) && (old_val <= 15))
   {
     state = 1 - state;
     delay(500);
   }
-  old_val = val; // valor del antiguo estado
+  old_val = val; 
   if (state == 1)
   {
-    digitalWrite(pinled, HIGH); // enciende el LED
+    digitalWrite(pinled, HIGH); 
   }
   else
   {
-    digitalWrite(pinled, LOW); // apagar el LED
+    digitalWrite(pinled, LOW);
   }
 
-  val2 = ultraleft.Ranging(CM); // lee el estado del Boton
+  val2 = ultraleft.Ranging(CM); 
   if ((val2 <= 15) && (old_val2 <= 15))
   {
     state2 = 1 - state2;
     delay(500);
   }
-  old_val2 = val2; // valor del antiguo estado
+  old_val2 = val2; 
   if (state2 == 1)
   {
-    digitalWrite(pinled2, HIGH); // enciende el LED
+    digitalWrite(pinled2, HIGH); 
   }
   else
   {
-    digitalWrite(pinled2, LOW); // apagar el LED
+    digitalWrite(pinled2, LOW); 
   }
 }
