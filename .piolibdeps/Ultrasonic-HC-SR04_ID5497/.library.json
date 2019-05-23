@@ -1,0 +1,46 @@
+{
+    "name": "Ultrasonic-HC-SR04", 
+    "version": "1.0.0", 
+    "description": "A library for handling Ultrasonic HC-SR04 data", 
+    "keywords": [
+        "ultrasonic", 
+        "arduino", 
+        "reading"
+    ], 
+    "authors": [
+        {
+            "email": "brunolnetto@gmail.com", 
+            "url": null, 
+            "maintainer": false, 
+            "name": "Bruno Peixoto"
+        }, 
+        {
+            "email": null, 
+            "url": null, 
+            "maintainer": true, 
+            "name": "JRodrigoTech"
+        }
+    ], 
+    "repository": {
+        "url": "https://github.com/brunolnetto/Ultrasonic-HC-SR04.git", 
+        "type": "git"
+    }, 
+    "license": "mpich2 License", 
+    "frameworks": [
+        "arduino"
+    ], 
+    "platforms": [
+        "atmelavr", 
+        "atmelsam", 
+        "espressif32", 
+        "espressif8266", 
+        "intel_arc32", 
+        "microchippic32", 
+        "nordicnrf51", 
+        "nordicnrf52", 
+        "ststm32", 
+        "teensy", 
+        "timsp430"
+    ], 
+    "id": 5497
+}
